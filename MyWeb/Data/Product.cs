@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 //Dinh nghia Entities
 namespace MyWeb.Data
 {
+    //annotations
     [Table("Product")]
     public class Product
     {

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyWeb.Data
 {
+    //loại trái cây, quần áo, ...
     [Table("Type")]
     public class Type
     {

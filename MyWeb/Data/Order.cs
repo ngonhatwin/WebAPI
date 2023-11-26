@@ -1,4 +1,4 @@
-﻿namespace MyWeb.Data
+﻿ namespace MyWeb.Data
 {
 
     // Entities Đơn Hàng
@@ -11,6 +11,7 @@
             Complete = 2,
             Cancel = -1,
         }
+        
         private Guid id_;
         private DateTime order_Date_;
         private DateTime? delivery_Date_;
@@ -69,6 +70,8 @@
             set { telephone_ = value; }
             get { return telephone_; }
         }
+
+        //
         public ICollection<OrderDetails> ListOrderDetail
         {
             set { list_Orders_ = value; }

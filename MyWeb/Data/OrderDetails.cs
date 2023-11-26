@@ -1,5 +1,8 @@
 ﻿namespace MyWeb.Data
 {
+    //chi tiết đơn hàng 
+    //một chi tiết đơn hàng chỉ có 1 sản phẩm
+    //mà một đơn hàng lại có nhiều chi tiết đơn hàng(=> là có nhiều sản phẩm)
     public class OrderDetails
     {
         private Guid id_Details_;

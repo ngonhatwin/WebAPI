@@ -12,6 +12,8 @@ namespace MyWeb.Data
         public DbSet<Type> Types { get; set;}
         public DbSet<Order> Orders { get; set;}
         public DbSet<OrderDetails> OrderDetails { get; set;}
+        public DbSet<Account> Accounts { get; set;}
+
         //Fluent API
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,6 +30,11 @@ namespace MyWeb.Data
                 e.Property(or => or.Name).IsRequired().HasMaxLength(100);
             });
 
+            //một chi tiết đơn hàng chỉ liên kết 1 đơn hàng
+            //một đơn hàng sẽ có nhiều chi tiết đơn hàng( sản phẩm chứa trong chi tiết đơn hàng)
+            //--
+            //một chi tiết đơn hàng chỉ có 1 sản phẩm
+            //một sản phẩm liên kết với nhiều chi tiết đơn hàng
             modelBuilder.Entity<OrderDetails>(e =>
             {
                 //đặt tên bảng
