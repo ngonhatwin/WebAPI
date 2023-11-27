@@ -3,19 +3,18 @@
 namespace MyWeb.Models
 {
     
-    public class TypeModel
+    public class Type
     {
         
         private string name_;
 
         
-        public TypeModel() 
+        public Type() 
         {
             name_ = string.Empty;
         }
 
-        [Required]
-        [MaxLength(100)]
+       
         public string Name 
         { 
             set { name_ = value; }

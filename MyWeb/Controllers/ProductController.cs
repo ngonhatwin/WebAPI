@@ -61,17 +61,17 @@ namespace MyWeb.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Edit(Guid id, ProductVietNam product_edit)
+        public IActionResult Edit(Guid id, Models.Product product)
         {
             var putPr = context_.Products.SingleOrDefault(pu => pu.ID == id);
             if (putPr == null)
             {
                 return NotFound();
             }
-            putPr.Name = product_edit.Name;
-            putPr.Price = product_edit.Price;    
-            putPr.Describe = product_edit.Describe;
-            putPr.Discount = product_edit.Discount;
+            putPr.Name = product.Name;
+            putPr.Price = product.Price;    
+            putPr.Describe = product.Describe;
+            putPr.Discount = product.Discount;
             context_.SaveChanges();
             return NoContent();
         }

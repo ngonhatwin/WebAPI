@@ -43,7 +43,7 @@ namespace MyWeb.Data
                 e.HasKey(e => new { e.IDDetails, e.IDProduct });
                 //// Thiết lập mối quan hệ N:1 với mô hình Order thông qua trường IDDetails
                 e.HasOne(e => e.MyOrder)
-                .WithMany(e => e.ListOrderDetail)
+                .WithMany(e => e.order_Detail)
                 .HasForeignKey(e => e.IDDetails)
                 .HasConstraintName("FK_DonHangChiTiet_DonHang");
                 // Thiết lập mối quan hệ N:1 với mô hình Product thông qua trường IDProduct

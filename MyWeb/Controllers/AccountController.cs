@@ -56,5 +56,21 @@ namespace MyWeb.Controllers
                 return BadRequest();
             }
         }
+
+        [HttpPut("{id}")]
+        public IActionResult editAccount(Guid id, Models.Account account)
+        {
+            var putAc = context_.Accounts.SingleOrDefault(pu => pu.ID == id);
+            if (putAc == null)
+            {
+                return NotFound();
+            }
+            putAc.FirstName = account.FirstName;
+            putAc.LastName = account.LastName;
+            putAc.Email = account.Email;
+            putAc.PassWord = account.PassWord;
+            context_.SaveChanges();
+            return NoContent();
+        }
     }
 }

@@ -72,7 +72,7 @@
         }
 
         //
-        public ICollection<OrderDetails> ListOrderDetail
+        public ICollection<OrderDetails> order_Detail
         {
             set { list_Orders_ = value; }
             get { return list_Orders_; }

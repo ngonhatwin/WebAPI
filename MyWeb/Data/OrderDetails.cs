@@ -58,8 +58,6 @@
         {
             set { myproduct_ = value; }
             get { return myproduct_; }
-        }
-
-        
+        }  
     }
 }

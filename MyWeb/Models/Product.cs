@@ -35,15 +35,4 @@
             get { return discount_; }
         }
     }
-
-    public class ProductVietNam : Product
-    {
-        private Guid id_;
-
-        public Guid ID
-        {
-            set { id_ = value; }
-            get { return id_; }
-        }
-    }
 }

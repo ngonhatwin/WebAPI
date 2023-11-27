@@ -36,7 +36,7 @@ namespace MyWeb.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateNew(TypeModel model)
+        public IActionResult CreateNew(Models.Type model)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace MyWeb.Controllers
 
         [HttpPut("{id}")]
 
-        public IActionResult UpdateByID(int id, TypeModel model)
+        public IActionResult UpdateByID(int id, Models.Type model)
         {
             var catelory = context_.Types.SingleOrDefault(ca => ca.TypeID == id);
             if (catelory == null)
