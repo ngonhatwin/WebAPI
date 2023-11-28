@@ -256,3 +256,14 @@ C:\Users\ngonh\source\repos\MyWeb\MyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0
 C:\Users\ngonh\source\repos\MyWeb\MyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ngonh\source\repos\MyWeb\MyWeb\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 C:\Users\ngonh\source\repos\MyWeb\MyWeb\obj\Debug\net8.0\MyWeb.sourcelink.json
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.csproj.AssemblyReference.cache
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.AssemblyInfoInputs.cache
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.AssemblyInfo.cs
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.csproj.CoreCompileInputs.cache
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.sourcelink.json
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.dll
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\refint\MyWeb.dll
+C:\Users\ngonh\source\repos\WebAPI\MyWeb\obj\Debug\net8.0\MyWeb.pdb

@@ -161,7 +161,7 @@ namespace MyWeb.Migrations
             modelBuilder.Entity("MyWeb.Data.OrderDetails", b =>
                 {
                     b.HasOne("MyWeb.Data.Order", "MyOrder")
-                        .WithMany("ListOrderDetail")
+                        .WithMany("order_Detail")
                         .HasForeignKey("IDDetails")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
@@ -190,7 +190,7 @@ namespace MyWeb.Migrations
 
             modelBuilder.Entity("MyWeb.Data.Order", b =>
                 {
-                    b.Navigation("ListOrderDetail");
+                    b.Navigation("order_Detail");
                 });
 
             modelBuilder.Entity("MyWeb.Data.Product", b =>

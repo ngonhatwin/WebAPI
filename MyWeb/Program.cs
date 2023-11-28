@@ -1,5 +1,6 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MyWeb.Data;
+using MyWeb.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DbContextProduct>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyDB"))) ;
-
+builder.Services.AddScoped<ITypeRepository, TypeRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,7 +23,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
 
 app.UseHttpsRedirection();
 
